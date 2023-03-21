@@ -1,5 +1,3 @@
-# _*_ coding:utf-8 _*_
-
 import urllib.request # python3用
 
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36'}
