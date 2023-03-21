@@ -13,6 +13,7 @@ for i in range(167):
         html= urllib.request.urlopen(request)
         f.write(html.read())
     page = page + 35
-    print('第' + str(i + 1) + '次结束：')
+    print('第' + str(i + 1) + '次结束，休眠两秒')
+    sleep(2)
 f.close()
 print("Finished!")
