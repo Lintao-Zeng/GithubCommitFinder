@@ -9,7 +9,7 @@ page = 34
 for i in range(1000):
     print('第' + str(i + 1) + '次开始：')
     with open("output.txt","a") as f:
-        f.write(urllib.request.urlopen('https://github.com/termux/termux-packages/commits/master?after=6b95718c6054c611ed07bbb8139e0d6ce6e7d593+' + str(page).encode('ascii') + '&branch=master', headers).read())
+        f.write(urllib.request.urlopen('https://github.com/termux/termux-packages/commits/master?after=6b95718c6054c611ed07bbb8139e0d6ce6e7d593+' + str(page).encode('utf8') + '&branch=master', headers).read())
     page = page + 35
     print('第' + str(i + 1) + '次结束：')
 print("Finished!")
