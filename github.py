@@ -1,5 +1,6 @@
 # python3
 import urllib.request
+import time
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
 page = 34
@@ -14,6 +15,6 @@ for i in range(167):
         f.write(html.read())
     page = page + 35
     print('第' + str(i + 1) + '次结束，休眠两秒')
-    sleep(2)
+    time.sleep(2)
 f.close()
 print("Finished!")
